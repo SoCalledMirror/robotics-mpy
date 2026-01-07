@@ -71,7 +71,7 @@ is&nbsp;planned for&nbsp;subsequent development stages.
 The repository is&nbsp;organized in&nbsp;accordance with
 the&nbsp;[recommendations for&nbsp;Python packages](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
 
-*   The&nbsp;[__examples__](examples) directory
+*   The&nbsp;[__examples__](examples/README.md) directory
 	contains examples of&nbsp;using the&nbsp;framework modules.
 *   The&nbsp;[__src__](src/README.md) directory
 	contains the&nbsp;source code of&nbsp;the&nbsp;framework modules.
@@ -89,7 +89,7 @@ the&nbsp;[recommendations for&nbsp;Python packages](https://packaging.python.org
 	the&nbsp;[installation guide](https://docs.micropython.org/en/latest/esp8266/tutorial/intro.html#deploying-the-firmware).
 3.	Install the&nbsp;SoCalled Robotics framework on&nbsp;your device.
 	See the&nbsp;[modules source code description](src/README.md#installation).
-4.	Use the&nbsp;[ready-made examples](examples)
+4.	Use the&nbsp;[ready-made examples](examples/README.md#available-examples)
 	as&nbsp;a&nbsp;starting point for&nbsp;your projects.
 
 <a name="licenses"></a>
