@@ -73,7 +73,7 @@ the&nbsp;[recommendations for&nbsp;Python packages](https://packaging.python.org
 
 *   The&nbsp;[__examples__](examples) directory
 	contains examples of&nbsp;using the&nbsp;framework modules.
-*   The&nbsp;[__src__](src) directory
+*   The&nbsp;[__src__](src/README.md) directory
 	contains the&nbsp;source code of&nbsp;the&nbsp;framework modules.
 *   The&nbsp;[__CONTRIBUTORS.md__](CONTRIBUTORS.md) file
 	lists the&nbsp;project contributors.
@@ -88,6 +88,7 @@ the&nbsp;[recommendations for&nbsp;Python packages](https://packaging.python.org
 2.	Install the&nbsp;firmware on&nbsp;your device by&nbsp;following
 	the&nbsp;[installation guide](https://docs.micropython.org/en/latest/esp8266/tutorial/intro.html#deploying-the-firmware).
 3.	Install the&nbsp;SoCalled Robotics framework on&nbsp;your device.
+	See the&nbsp;[modules source code description](src/README.md#installation).
 4.	Use the&nbsp;[ready-made examples](examples)
 	as&nbsp;a&nbsp;starting point for&nbsp;your projects.
 
