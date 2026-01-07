@@ -77,7 +77,7 @@ MicroPython и&nbsp;подключаемой периферии, строя би
 Репозиторий организован в&nbsp;соответствии
 с&nbsp;[рекомендациями для&nbsp;Python-пакетов](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
 
-*	Директория [__examples__](examples)
+*	Директория [__examples__](examples/README_RU.md)
 	содержит примеры использования модулей фреймворка.
 *	Директория [__src__](src/README_RU.md)
 	содержит исходный код модулей фреймворка.
@@ -96,7 +96,7 @@ MicroPython и&nbsp;подключаемой периферии, строя би
 	[руководству по установке](https://docs.micropython.org/en/latest/esp8266/tutorial/intro.html#deploying-the-firmware).
 3.	Установите фреймворк SoCalled Robotics на&nbsp;устройство.
 	См.&nbsp;[описание исходного кода модулей](src/README_RU.md#installation).
-4.	Используйте [готовые примеры](examples)
+4.	Используйте [готовые примеры](examples/README_RU.md#available-examples)
 	как отправную точку для&nbsp;проектов.
 
 <a name="licenses"></a>
