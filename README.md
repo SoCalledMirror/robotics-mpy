@@ -1,3 +1,7 @@
+__EN__ | [RU](README_RU.md)
+
+---
+
 # SoCalled Robotics (MicroPython)
 
 __A&nbsp;lightweight, event‑driven framework
