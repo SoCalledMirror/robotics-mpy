@@ -1,3 +1,7 @@
+__EN__ | [RU](README_RU.md)
+
+---
+
 # SoCalled Robotics (MicroPython) Source Code
 
 This directory contains the&nbsp;source code

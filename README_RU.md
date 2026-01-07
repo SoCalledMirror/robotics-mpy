@@ -79,7 +79,7 @@ MicroPython и&nbsp;подключаемой периферии, строя би
 
 *	Директория [__examples__](examples)
 	содержит примеры использования модулей фреймворка.
-*	Директория [__src__](src)
+*	Директория [__src__](src/README_RU.md)
 	содержит исходный код модулей фреймворка.
 *	Файл [__CONTRIBUTORS.md__](CONTRIBUTORS.md)
 	содержит список участников проекта.
@@ -95,6 +95,7 @@ MicroPython и&nbsp;подключаемой периферии, строя би
 2.	Установите прошивку на&nbsp;устройство, следуя
 	[руководству по установке](https://docs.micropython.org/en/latest/esp8266/tutorial/intro.html#deploying-the-firmware).
 3.	Установите фреймворк SoCalled Robotics на&nbsp;устройство.
+	См.&nbsp;[описание исходного кода модулей](src/README_RU.md#installation).
 4.	Используйте [готовые примеры](examples)
 	как отправную точку для&nbsp;проектов.
 
