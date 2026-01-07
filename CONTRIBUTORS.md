@@ -1,4 +1,5 @@
 # SoCalled Robotics (MicroPython) Contributors
 
 *	Kirill Chuvilin, <chuvilin@socalled.link>
-	*	Maintainer, 2025
+	*	Maintainer, 2025-2026
+
