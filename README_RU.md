@@ -8,6 +8,7 @@ __Лёгкий, событийно-ориентированный фреймво
 для&nbsp;робототехники и&nbsp;IoT на&nbsp;MicroPython.__
 
 [Начать](#quick-start) •
+[Участвовать](CONTRIBUTING_RU.md) •
 [Чат](https://t.me/SoCalledGroup) •
 [Блог](https://t.me/SoCalledBlog) •
 [Задачи](https://socalled.link/robotics-mpy/issues)
@@ -23,7 +24,7 @@ __SoCalled Robotics__&nbsp;— это открытый фреймворк
 разделяющих общие [ценности](https://socalled.link/community/README_RU.md#values)
 и&nbsp;[принципы](https://socalled.link/community/README_RU.md#principles).
 
-📚&nbsp;[Подробнее о&nbsp;процессах в&nbsp;Руководстве по&nbsp;участию](https://socalled.link/community/CONTRIBUTING_RU.md)
+📚&nbsp;[Подробнее о&nbsp;процессах в&nbsp;Руководстве по&nbsp;участию](CONTRIBUTING_RU.md)
 
 <a name="vision"></a>
 ## Наше видение
