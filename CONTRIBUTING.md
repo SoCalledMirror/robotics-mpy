@@ -1,3 +1,7 @@
+__EN__ | [RU](CONTRIBUTING_RU.md)
+
+---
+
 # SoCalled Robotics (MicroPython) Contribution Guide
 
 Thank you for&nbsp;your interest in&nbsp;contributing to&nbsp;the&nbsp;[SoCalled Robotics (MicroPython)](README.md) project!
