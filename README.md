@@ -8,6 +8,7 @@ __A&nbsp;lightweight, event‑driven framework
 for&nbsp;robotics and&nbsp;IoT&nbsp;on&nbsp;MicroPython.__
 
 [Get Started](#quick-start) •
+[Contribute](CONTRIBUTING.md) •
 [Chat](https://t.me/SoCalledGroup) •
 [Blog](https://t.me/SoCalledBlog) •
 [Issues](https://socalled.link/robotics-mpy/issues)
@@ -24,7 +25,7 @@ a&nbsp;community of&nbsp;like‑minded people
 sharing common [values](https://socalled.link/community/README.md#values)
 and&nbsp;[principles](https://socalled.link/community/README.md#principles).
 
-📚&nbsp;[Learn more about processes in&nbsp;Contribution Guide](https://socalled.link/community/CONTRIBUTING.md)
+📚&nbsp;[Learn more about processes in&nbsp;Contribution Guide](CONTRIBUTING.md)
 
 ## Our Vision
 
