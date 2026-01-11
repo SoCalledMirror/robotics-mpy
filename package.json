@@ -1,0 +1,7 @@
+{
+    "version": "0.1.0",
+    "urls": [
+        ["socalled/__init__.py", "src/socalled/__init__.py"]
+    ],
+    "deps": []
+}
