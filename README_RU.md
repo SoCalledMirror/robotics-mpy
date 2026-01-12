@@ -84,6 +84,8 @@ MicroPython и&nbsp;подключаемой периферии, строя би
 	содержит исходный код модулей фреймворка.
 *	Файл [__CONTRIBUTORS.md__](CONTRIBUTORS.md)
 	содержит список участников проекта.
+*	Файл [__package.json__](package.json)&nbsp;—
+	манифест для&nbsp;установки пакета через пакетный менеджер.
 *	Файл [__README_RU.md__](README_RU.md)
 	Вы&nbsp;читаете сейчас
 	(является переводом файла [__README.md__](README.md)).
@@ -96,8 +98,26 @@ MicroPython и&nbsp;подключаемой периферии, строя би
 2.	Установите прошивку на&nbsp;устройство, следуя
 	[руководству по установке](https://docs.micropython.org/en/latest/esp8266/tutorial/intro.html#deploying-the-firmware).
 3.	Установите фреймворк SoCalled Robotics на&nbsp;устройство.
-	См.&nbsp;[описание исходного кода модулей](src/README_RU.md#installation).
-4.	Используйте [готовые примеры](examples/README_RU.md#available-examples)
+	*   __Рекомендуемый способ__&nbsp;—
+		[используйте пакетный менеджер](https://docs.micropython.org/en/latest/reference/packages.html#installing-packages-with-mpremote):
+		
+		```bash
+		mpremote mip install https://socalled.link/robotics-mpy/raw/main/package.json
+		```
+
+		`main` можно заменить на&nbsp;название другой ветки или тэга Git-репозитория.
+
+	*   __Альтернативные способы__ установки
+		см.&nbsp;в&nbsp;[описании исходного кода модулей](src/README_RU.md#installation).
+4.	После&nbsp;установки проверьте работу,
+	выполнив на&nbsp;устройстве:
+
+	```python
+	import socalled
+	print(socalled.__version__)
+	```
+
+5.	Используйте [готовые примеры](examples/README_RU.md#available-examples)
 	как отправную точку для&nbsp;проектов.
 
 <a name="licenses"></a>

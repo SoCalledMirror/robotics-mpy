@@ -48,6 +48,25 @@ There&nbsp;is no&nbsp;need to&nbsp;copy the&nbsp;__examples__ directory to&nbsp;
 Additional instructions for&nbsp;running and&nbsp;code explanations
 are&nbsp;provided in&nbsp;the&nbsp;comments within example files.
 
+### Blinking LED
+
+[__blinking_led.py__](blinking_led.py)
+
+This example demonstrates the&nbsp;core principle of&nbsp;hardware abstraction
+by&nbsp;using the&nbsp;framework's wrappers
+for&nbsp;&nbsp;`machine.Pin&nbsp;class and&nbsp;`time.sleep`&nbsp;method.
+&nbsp;also includes basic error handling for hardware initialisation.
+
+__Expected Behavior:__
+The&nbsp;built-in LED blinks continuously with a&nbsp;1-second interval.
+
+ESP8266 built-in LED logic:
+
+*	Pin 2 is the on-board LED.
+*	LED is ACTIVE LOW:
+	*	`led.value(0)` or `led.off()` → LED __ON__;
+	*	`led.value(1)` or `led.on()` → LED __OFF__.
+
 ---
 
 _Copyright&nbsp;©&nbsp;2026 [SoCalled Robotics (MicroPython) Contributors](CONTRIBUTORS.md)._

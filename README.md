@@ -82,8 +82,9 @@ the&nbsp;[recommendations for&nbsp;Python packages](https://packaging.python.org
 	contains the&nbsp;source code of&nbsp;the&nbsp;framework modules.
 *   The&nbsp;[__CONTRIBUTORS.md__](CONTRIBUTORS.md) file
 	lists the&nbsp;project contributors.
-*   The&nbsp;[__README.md__](README.md) file
-	you are&nbsp;reading now.
+*   The&nbsp;[__package.json__](package.json) file
+	is&nbsp;the&nbsp;manifest for&nbsp;installing the&nbsp;package via the&nbsp;package manager.
+*   The&nbsp;[__README.md__](README.md) file you are&nbsp;reading now.
 
 <a name="quick-start"></a>
 ## Getting Started
@@ -93,8 +94,26 @@ the&nbsp;[recommendations for&nbsp;Python packages](https://packaging.python.org
 2.	Install the&nbsp;firmware on&nbsp;your device by&nbsp;following
 	the&nbsp;[installation guide](https://docs.micropython.org/en/latest/esp8266/tutorial/intro.html#deploying-the-firmware).
 3.	Install the&nbsp;SoCalled Robotics framework on&nbsp;your device.
-	See the&nbsp;[modules source code description](src/README.md#installation).
-4.	Use the&nbsp;[ready-made examples](examples/README.md#available-examples)
+	*	__Recommended method.__
+		[Use the&nbsp;package manager](https://docs.micropython.org/en/latest/reference/packages.html#installing-packages-with-mpremote):
+
+		```bash
+		mpremote mip install https://socalled.link/robotics-mpy/raw/main/package.json
+		```
+
+		You can replace `main` with another branch or&nbsp;tag name from the&nbsp;Git repository.
+		
+	*	__Alternative methods__
+		see in&nbsp;the&nbsp;[modules source code description](src/README.md#installation).
+4.	After installation, verify it&nbsp;works
+	by&nbsp;running on&nbsp;the&nbsp;device:
+
+	```python
+	import socalled
+	print(socalled.__version__)
+	```
+
+5.	Use the&nbsp;[ready-made examples](examples/README.md#available-examples)
 	as&nbsp;a&nbsp;starting point for&nbsp;your projects.
 
 <a name="licenses"></a>
