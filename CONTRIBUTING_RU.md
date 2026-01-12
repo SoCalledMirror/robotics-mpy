@@ -24,6 +24,7 @@
 	*	[Потокобезопасность](#thread-safety)
 	*	[Эффективность](#efficiency)
 	*	[Устойчивость](#stability)
+	*	[Установка через&nbsp;mip](#mip-install)
 	*	[Проверка на&nbsp;примерах](#examples)
 *	[Стиль кода](#code-style)
 	*	[Соглашения по&nbsp;именованию](#code-naming)
@@ -102,6 +103,45 @@ machine.enable_irq()
 *	Используйте встроенные исключения Python
 	(`ValueError`, `TypeError`, `OSError` и&nbsp;др.) для&nbsp;стандартных случаев.
 *	Избегайте «голых» `except`, указывайте конкретные типы исключений.
+
+<a name="mip-install"></a>
+### Установка через&nbsp;mip
+
+Библиотеки фреймворка должны быть доступны
+для&nbsp;[установки с&nbsp;помощью пакетного менеджера](src/README_RU.md#installation-mip).
+Каждый новый модуль указывайте в&nbsp;файлах:
+
+*	[__package.json__](package.json), список `urls`
+	(в&nbsp;лексикографическом порядке по&nbsp;отношению к&nbsp;остальным модулям);
+*	[__socalled/\_\_init\_\_.py__](src/socalled/__init__.py), словарь `__attr_modules__`
+	(в&nbsp;лексикографическом порядке по&nbsp;отношению к&nbsp;остальным атрибутам).
+
+При добавлении/изменении модулей
+обновляйте версию фреймворка в&nbsp;этих файлах
+в&nbsp;соответствии с&nbsp;[семантическим версионированием](https://semver.org/lang/ru/)
+__MAJOR.MINOR.PATCH__:
+
+*	__PATCH__&nbsp;— для исправлений;
+*	__MINOR__&nbsp;— для новых модулей или функций.
+
+Перед отправкой запроса на&nbsp;слияние __обязательно убедитесь__,
+что&nbsp;модули корректно устанавливаются:
+
+```bash
+mpremote mip install package.json
+```
+
+и&nbsp;корректно импортируются:
+
+```python
+import socalled
+from socalled import {ИмяКласса}
+print(socalled.__version__)
+```
+
+Если возникает `MemoryError` или `ImportError`,
+исправьте проблему прежде,
+чем создавать запрос на&nbsp;слияние.
 
 <a name="examples"></a>
 ### Проверка на&nbsp;примерах
@@ -217,8 +257,7 @@ def calculate_distance(duration_us):
 
 *	Используйте комментарии
 	для&nbsp;объяснения неочевидных решений или&nbsp;сложной логики.
-*	Объясняйте _почему_ выбрана именно такая реализация,
-	если это неочевидно.
+*	Объясняйте _почему_ выбрана именно такая реализация, если это неочевидно.
 *	Избегайте комментариев, которые просто дублируют код.
 *	Располагайте комментарий над объясняемым блоком,
 	начиная с&nbsp;заглавной буквы.
@@ -246,7 +285,7 @@ self._events = []
 | __Actuators__      | Управление приводами    | `Servo`, `ServoController`
 | __Core__           | Изменения в&nbsp;ядре   | `Timer`, `EventLoop`
 | __Documentation__  | Документация            | __README_RU.md__, __CONTRIBUTING_RU.md__
-| __Examples__       | Примеры использования   | __examples/*.py__
+| __Examples__       | Примеры использования   | __examples/blinking_led.py__
 | __Infrastructure__ | Инфраструктура проекта  | __\_\_init\_\_.py__, __package.json__
 | __Input__          | Обработка ввода         | `Button`
 | __Sensors__        | Работа с&nbsp;датчиками | `DigitalSensor`, `Hcsr04Sensor`

@@ -24,6 +24,7 @@ for&nbsp;style, architecture, documentation, and&nbsp;formatting.
 	*	[Thread Safety](#thread-safety)
 	*	[Efficiency](#efficiency)
 	*	[Stability](#stability)
+	*	[Installation via&nbsp;mip](#mip-install)
 	*	[Testing with Examples](#examples)
 *	[Code Style](#code-style)
 	*	[Naming Conventions](#code-naming)
@@ -102,6 +103,44 @@ Code must be&nbsp;resilient to&nbsp;possible failures.
 	for standard cases.
 *	Avoid “bare” `except` statements;
 	specify concrete exception types.
+
+<a name="mip-install"></a>
+### Installation via&nbsp;mip
+
+The framework libraries must be&nbsp;available
+for&nbsp;[installation via the package manager](src/README.md#installation-mip).
+For each new module, specify&nbsp;it in&nbsp;the&nbsp;files:
+
+*	[__package.json__](package.json), the&nbsp;`urls` list
+	(in&nbsp;lexicographic order relative to&nbsp;other modules);
+*	[__socalled/\_\_init\_\_.py__](socalled/__init__.py), the&nbsp;`__attr_modules__` map
+	(in&nbsp;lexicographic order relative to&nbsp;other attributes).
+
+When adding or modifying modules,
+update the&nbsp;framework version in&nbsp;these files
+according to&nbsp;[Semantic Versioning](https://semver.org/)
+__MAJOR.MINOR.PATCH__:
+
+*	__PATCH__ for&nbsp;bug fixes;
+*	__MINOR__ for&nbsp;new modules or&nbsp;functionality.
+
+Before submitting a&nbsp;pull request, __make sure__
+that the&nbsp;modules install correctly:
+
+```bash
+mpremote mip install package.json
+```
+
+and import correctly:
+
+```python
+import socalled
+from socalled import {ClassName}
+print(socalled.__version__)
+```
+
+If you encounter a&nbsp;`MemoryError` or `ImportError`,
+fix the&nbsp;issue before creating a&nbsp;pull request.
 
 <a name="examples"></a>
 ### Testing with Examples
@@ -249,7 +288,7 @@ in&nbsp;square brackets to&nbsp;indicate the&nbsp;scope of&nbsp;changes
 | __Actuators__      | Actuator control       | `Servo`, `ServoController`
 | __Core__           | Core changes           | `Timer`, `EventLoop`
 | __Documentation__  | Documentation          | __README.md__, __CONTRIBUTING.md__
-| __Examples__       | Usage examples         | __examples/*.py__
+| __Examples__       | Usage examples         | __examples/blinking_led.py__
 | __Infrastructure__ | Project infrastructure | __\_\_init\_\_.py__, __package.json__
 | __Input__          | Input handling         | `Button`
 | __Sensors__        | Working with sensors   | `DigitalSensor`, `Hcsr04Sensor`
